@@ -16,6 +16,7 @@ def clean_tweets(text):
 
 stop = stopwords.words('english')
 
+
 def tokenizer(text):
     text = re.sub('<[^>]*>', '', text)
     emoticons = re.findall('(?::|;|=)(?:-)?(?:\)|\(|D|P)',text.lower())
