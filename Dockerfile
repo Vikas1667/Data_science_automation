@@ -1,7 +1,7 @@
 #I specify the parent base image which is the python version 3.7
 FROM python:3.7
 
-MAINTAINER aminu israel <aminuisrael2@gmail.com>
+MAINTAINER vikas kumbharkar <vikas.kumbharkar308@gmail.com>
 
 # This prevents Python from writing out pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -37,4 +37,4 @@ EXPOSE 9090
 ENTRYPOINT [ "python" ] 
 
 # Run app.py when the container launches
-CMD [ "app.py","run","--host","0.0.0.0"] 
+CMD [ "app.py","run","--host","0.0.0.0"]
